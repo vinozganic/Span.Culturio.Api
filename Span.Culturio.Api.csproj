@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.3.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.3.0" />
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Controllers\" />
+    <None Remove="Models\" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Microsoft.EntityFrameworkCore.Design" />
+    <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
+    <None Remove="FluentValidation" />
+    <None Remove="FluentValidation.AspNetCore" />
+    <None Remove="FluentValidation.DependencyInjectionExtensions" />
+    <None Remove="AutoMapper" />
+    <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="Models\CultureObject\" />
+    <None Remove="Data\" />
+    <None Remove="Data\Entities\" />
+    <None Remove="Profiles\" />
+    <None Remove="Services\" />
+    <None Remove="Models\User\" />
+    <None Remove="Services\UserService\" />
+    <None Remove="Models\Authorization\" />
+    <None Remove="Helpers\" />
+    <None Remove="Models\Package\" />
+    <None Remove="Services\Package\" />
+    <None Remove="Services\Subscriptions\" />
+    <None Remove="Models\Subscriptions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+    <Folder Include="Models\CultureObject\" />
+    <Folder Include="Data\" />
+    <Folder Include="Data\Entities\" />
+    <Folder Include="Profiles\" />
+    <Folder Include="Services\" />
+    <Folder Include="Models\User\" />
+    <Folder Include="Services\UserService\" />
+    <Folder Include="Models\Authorization\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Models\Package\" />
+    <Folder Include="Services\Package\" />
+    <Folder Include="Services\Subscriptions\" />
+    <Folder Include="Models\Subscriptions\" />
+  </ItemGroup>
+</Project>
